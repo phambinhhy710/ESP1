@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cutreson/ESP32-IoT-Template.git"
+    "url": "https://github.com/phambinhhy710/ESP1.git"
   },
   "author": "Cutreson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Cutreson/ESP32-IoT-Template/issues"
+    "url": "https://github.com/phambinhhy710/ESP1/issues"
   },
-  "homepage": "https://github.com/Cutreson/ESP32-IoT-Template#readme",
+  "homepage": "https://github.com/phambinhhy710/ESP1#readme",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.3",

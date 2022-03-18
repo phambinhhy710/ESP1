@@ -1,4 +1,4 @@
-var socket = io("https://esp32-iot-template.herokuapp.com");
+var socket = io("https://localhost:3000");
 
 socket.on("server-send-browser", function(data){
     if (data.value == "on") {
