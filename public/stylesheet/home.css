@@ -21,7 +21,14 @@ body {
 #console {
     padding: 5px;
 }
-
+#title {
+    width:100% ;
+    height: 50px;
+    background-color: aqua;
+    border: solid 1px black;
+    border-radius: 5%;
+    margin: 10px;
+}
 #led {
     width: 100px;
     height: 100px;
