@@ -10,8 +10,8 @@ body {
 #frame {
     background-color: rgb(211, 214, 209);
     margin: auto;
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
     margin: auto;
     border: 1px solid grey;
     border-radius: 10px;
