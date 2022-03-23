@@ -24,7 +24,7 @@ $(function() {
         socket.emit("browser-send-data", {name: "Browser", address: "btnOff", value: "On"});
     });
 
-    $("#btnStart").on("click", function() {
+    $("#btnOff").on("click", function() {
         socket.emit("browser-send-data", {name: "Browser", address: "btnStart", value: "On"});
     });
     $("#btnStop").on("click", function() {
