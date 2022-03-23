@@ -21,10 +21,10 @@ $(function() {
         socket.emit("browser-send-data", {name: "Browser", address: "btnOn", value: "On"});
     });
     $("#btnOff").on("click", function() {
-        socket.emit("browser-send-data", {name: "Browser", address: "btnOff", value: "On"});
+        socket.emit("browser-send-data", {name: "Browser", address: "btnOff1", value: "On"});
     });
 
-    $("#btnOff").on("click", function() {
+    $("#btnStart").on("click", function() {
         socket.emit("browser-send-data", {name: "Browser", address: "btnStart", value: "On"});
     });
     $("#btnStop").on("click", function() {
