@@ -22,7 +22,7 @@ body {
     padding: 5px;
 }
 #title {
-    position: absolute;
+    position:relative;
     top: 150px;
     left: 150px;
     width:100% ;
