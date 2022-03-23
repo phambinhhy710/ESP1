@@ -14,7 +14,7 @@ const char* password = "28031997";
 
 WebServer server(80);
 //////////////////////////////////////////////////////////
-#define ledPin 2
+                                                                                                          
 const char *socketServer = "esp32-iot-template.herokuapp.com";
 const int socketPort = 80;
 
@@ -28,7 +28,7 @@ JsonObject& dataReceiver(const char *data){
   Serial.printf(parsed["name"]);
   Serial.printf("\n");
   Serial.printf(parsed["address"]);
-  Serial.printf("\n");
+  Serial.printf("\n");ubtr;m
   Serial.printf(parsed["value"]);
   Serial.printf("\n");
   return parsed;
@@ -47,16 +47,30 @@ void dataSender(const char *client_name, const char *address, const char *value)
   }
 //function trong socket.on("server-send-data", server_send_data);
 void server_send_data(const char *data, size_t length){ 
-  if(strcmp(dataReceiver(data)["value"], "on") == 0){
-      digitalWrite(ledPin, HIGH);
-      dataSender("ESP client", "led", "on"); //tao chuoi json luu tai messageJsonEmit
+  if(strcmp(dataReceiver(data)["adress"], "btnOn") == 0){
+      digitalWrite(On, HIGH);
+      digitalWrite(Off), LOW);
+      dataSender("ESP client", "ledOn", "On"); //tao chuoi json luu tai messageJsonEmit
       socket.emit("client-send-data", messageJsonEmit);
   }
-  else{
-      digitalWrite(ledPin, LOW);
-      dataSender("ESP client", "led", "off");
-      socket.emit("client-send-data", messageJsonEmit );
-    }
+  if(strcmp(dataReceiver(data)["adress"], "btnOff") == 0){
+      digitalWrite(Off, HIGH);
+      digitalWrite(On, LOW);
+      dataSender("ESP client", "ledOn", "Off"); //tao chuoi json luu tai messageJsonEmit
+      socket.emit("client-send-data", messageJsonEmit);
+  }
+  if(strcmp(dataReceiver(data)["adress"], "btnStart") == 0){
+      digitalWrite(Start, HIGH);
+      digitalWrite(Stop, LOW);
+      dataSender("ESP client", "ledStart", "On"); //tao chuoi json luu tai messageJsonEmit
+      socket.emit("client-send-data", messageJsonEmit);
+  }
+  if(strcmp(dataReceiver(data)["adress"], "btnStop") == 0){
+      digitalWrite(Stop, HIGH);
+      digitalWrite(Start, LOW);
+      dataSender("ESP client", "ledStart", "Off"); //tao chuoi json luu tai messageJsonEmit
+      socket.emit("client-send-data", messageJsonEmit);
+  }
 }
 //////////////////////////////////////////////////////////
 /*
