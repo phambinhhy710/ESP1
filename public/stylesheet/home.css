@@ -23,10 +23,10 @@ body {
 }
 #title {
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 150px;
+    left: 150px;
     width:100% ;
-    height: 100px;
+    height: 50px;
     background-color: aqua;
 }
 #led {
