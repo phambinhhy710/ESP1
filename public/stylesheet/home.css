@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(240, 247, 244);
+    background-color: hsl(154, 30%, 95%);
     font-family: sans-serif;
     width: 100%;
     min-height: 100vh;
@@ -8,7 +8,7 @@ body {
     align-items: center;
 }
 #frame {
-    background-color: rgb(211, 214, 209);
+    background-color: hsl(96, 6%, 83%);
     margin: auto;
     width: 600px;
     height: 600px;
@@ -46,8 +46,9 @@ body {
     text-align: center;
     background-color: #c8c8c8;
     position: absolute;
-    top: 0px;
-    height: 50px;
+    top: 100px;
+    left: 100px;
+    height: 150px;
     width: 100%;
     border: 3px solid #7f9b9b;
 }
